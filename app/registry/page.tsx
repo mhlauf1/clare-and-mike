@@ -19,7 +19,7 @@ const Page = (props: Props) => {
           >
             As we start this exciting new chapter together, your presence at our
             wedding is the greatest gift of all. For those who wish to
-            contribute in other ways, we've thoughtfully curated two options to
+            contribute in other ways, we&apos;ve thoughtfully curated two options to
             celebrate our marriage.
           </p>
           <div className="flex flex-col lg:flex-row mt-24 justify-center gap-12 ">

@@ -118,7 +118,9 @@ const Page = () => {
             />
           </div>
           {items.map((item) => (
-            <Card year={item.year} text={item.text} img={item.img} />
+            <div key={item.text}>
+              <Card year={item.year} text={item.text} img={item.img} />
+            </div>
           ))}
         </div>
       </section>
