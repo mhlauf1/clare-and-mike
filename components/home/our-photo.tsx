@@ -35,7 +35,7 @@ const OurPhotos = (props: Props) => {
             alt="Our Photos"
           />
         </div>
-        <div className="absolute flex-col text-white w-full gap-2 mt-48 h-full flex items-center justify-center">
+        <div className="absolute flex-col text-white w-full gap-2 mt-24 lg:mt-48 h-full flex items-center justify-center">
           <span style={{ letterSpacing: "5px" }} className="text-xl lg:text-2xl uppercase">
             View
           </span>

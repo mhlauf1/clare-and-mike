@@ -7,9 +7,11 @@ const Footer = (props: Props) => {
   return (
     <footer className="flex flex-col mb-12 mt-16 pt-16 items-center">
       <div className="border-b pb-16 text-center items-center">
-        <p className="self-center font-manstein text-2xl lg:text-4xl font-semibold whitespace-nowrap ">
-          C+M
-        </p>
+        <a href="/">
+          <p className="self-center font-manstein text-2xl lg:text-4xl font-semibold whitespace-nowrap ">
+            C+M
+          </p>
+        </a>
         <div>
           <ul className="flex text-neutral-500 flex-col lg:flex-row gap-6 lg:gap-12 mt-6 lg:mt-12 items-center">
             <Link href="/accommodations">Accommodations</Link>
