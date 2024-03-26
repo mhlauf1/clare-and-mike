@@ -6,23 +6,9 @@ import OurPhotos from "../components/home/our-photo";
 import OurStory from "../components/home/our-story";
 import Accommodations from "../components/home/accommodations";
 import Schedule from "../components/home/schedule";
-import { supabase } from "../lib/supabaseClient";
 import FAQ from "../components/home/FAQ";
 import Footer from "../components/footer";
 const Page = () => {
-  async function addToDb() {
-    const { data, error } = await supabase.from("guests").insert([
-      {
-        name: "John Doe",
-        attending_wedding: true,
-        attending_welcome_party: false,
-        dinner_selection: "Chicken",
-        group_id: 1,
-      },
-    ]);
-  }
-
-  addToDb();
 
   return (
     <>

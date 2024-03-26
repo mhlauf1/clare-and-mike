@@ -4,7 +4,6 @@ import NameEntryStep from "./NameEntryStep";
 import DetailsEntryStep from "./DetailsEntryStep";
 import SuccessScreen from "./SuccessScreen"; // Assuming you have this component ready
 import StepProgress from "./StepProgress";
-import { supabase } from "../../lib/supabaseClient";
 
 type Props = {};
 
