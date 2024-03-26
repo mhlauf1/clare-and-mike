@@ -36,11 +36,11 @@ function Card({ text, year, img }: any) {
       <motion.div className="card" variants={cardVariants}>
         <p
           style={{ lineHeight: "160%", letterSpacing: "3px" }}
-          className="text-sm text-neutral-500 uppercase mb-2"
+          className="text-sm text-neutral-500 uppercase mb-1"
         >
           {year}
         </p>
-        <h4 className="text-xl  mb-4">{text}</h4>
+        <h4 style={{letterSpacing: "1px"}} className="text-sm uppercase w-3/4  mb-4">{text}</h4>
         <div className="w-auto h-auto">
           <Image
             src={img}

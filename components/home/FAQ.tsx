@@ -12,7 +12,7 @@ const FAQ = (props: Props) => {
       <div className="flex flex-col gap-12">
         <div>
           <p className="text-lg lg:text-xl mb-2">Is there a dress code?</p>
-          <p>
+          <p >
             Formal Attire. Our ceremony will be outdoors and we suggest men wear
             suits in any color and women wear a floor length gown, midi or
             cocktail dress.
@@ -22,10 +22,25 @@ const FAQ = (props: Props) => {
           <p className="text-lg lg:text-xl mb-2">
             Where is the nearest airport?
           </p>
-          <ul className="list-disc px-4">
-            <li>Appleton International Airport - 50 miles away.</li>
-            <li>Milwaukee Mitchell International Airport - 67 miles away.</li>
-            <li>Ohare International Airport - 137 miles away.</li>
+          <ul className="px-2 flex flex-col gap-4">
+            <li>
+              <span className="text-sm uppercase">
+                Appleton International Airport <br />
+              </span>
+              50 miles away
+            </li>
+            <li>
+              <span className="text-sm uppercase">
+                Milwaukee Mitchell International Airport <br />
+              </span>
+              67 miles away
+            </li>
+            <li>
+              <span className="text-sm uppercase">
+                Ohare International Airport <br />
+              </span>
+              137 miles away
+            </li>
           </ul>
         </div>
       </div>
