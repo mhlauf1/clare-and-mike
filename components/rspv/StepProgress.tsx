@@ -7,7 +7,7 @@ interface StepProgressProps {
 
 const StepProgress: React.FC<StepProgressProps> = ({ currentStep }) => {
   return (
-    <div className="flex items-center gap-32 justify-center mb-8">
+    <div className="flex items-center  lg:gap-32 justify-around lg:justify-center mb-8">
       <div className="flex flex-col lg:flex-row items-center gap-4">
         <div
           className={`${
@@ -25,7 +25,7 @@ const StepProgress: React.FC<StepProgressProps> = ({ currentStep }) => {
         <h4
           className={`${
             currentStep === 1 ? "text-neutral-900" : "text-neutral-300"
-          } text-lg`}
+          } text-center text-lg`}
         >
           {" "}
           Enter Name

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 type Props = {};
 
@@ -11,16 +12,18 @@ const Footer = (props: Props) => {
         </p>
         <div>
           <ul className="flex text-neutral-500 flex-col lg:flex-row gap-6 lg:gap-12 mt-6 lg:mt-12 items-center">
-            <li>Accommodations</li>
-            <li>Wedding Party</li>
-            <li>Photos</li>
-            <li>Our Story</li>
-            <li>Registry</li>
-            <li>RSVP</li>
+            <Link href="/accommodations">Accommodations</Link>
+            <Link href="/wedding-party">Wedding Party</Link>
+            <Link href="/photos">Photos</Link>
+            <Link href="/our-story">Our Story</Link>
+            <Link href="/registry">Registry</Link>
+            <Link href="/rsvp">RSVP</Link>
           </ul>
         </div>
       </div>
-      <p className="mt-8 text-sm text-neutral-400">© 2024 Michael Laufersweiler. All rights reserved.</p>
+      <p className="mt-8 text-center text-sm text-neutral-400">
+        © 2024 Michael Laufersweiler. All rights reserved.
+      </p>
     </footer>
   );
 };
