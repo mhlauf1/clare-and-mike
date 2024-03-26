@@ -1,5 +1,4 @@
 import React from "react";
-import Countdown from "./Countdown";
 
 const SuccessScreen = () => {
   // Calculate the target date, which is June 15th of the current year
@@ -8,7 +7,7 @@ const SuccessScreen = () => {
   return (
     <div className="success-screen">
       <p>Thank you for your submission, we look forward to seeing you!</p>
-      <Countdown targetDate={weddingDate} />
+      {/* <Countdown targetDate={weddingDate} /> */}
     </div>
   );
 };
