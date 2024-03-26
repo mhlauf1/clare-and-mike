@@ -21,7 +21,7 @@ const Page = (props: Props) => {
             </p>
             <p className="mb-8 text-3xl">John Laufersweiler</p>
             <p className="mb-8 text-3xl">Sam Laufersweiler</p>
-            <p className="font-ortical mt-8 mb-8 pb-2 px-16 border-b text-2xl lg:text-3xl">
+            <p className="font-ortical mt-8 mb-8 pb-2 border-b text-2xl lg:text-3xl">
               Groomsmen
             </p>
             <p className="mb-8 text-3xl">Drew Bergwall</p>
@@ -37,7 +37,7 @@ const Page = (props: Props) => {
             </p>
             <p className="mb-8 text-3xl">Abby Rosler</p>
             <p className="mb-8 text-3xl">Hannah Weinewuth</p>
-            <p className="font-ortical mt-8 mb-8 pb-2 px-16 border-b text-2xl lg:text-3xl">
+            <p className="font-ortical mt-8 mb-8 pb-2 border-b text-2xl lg:text-3xl">
               Bridesmaids
             </p>
             <p className="mb-8 text-3xl">Krissy Tinkle</p>

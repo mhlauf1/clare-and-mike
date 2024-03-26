@@ -22,7 +22,7 @@ const Page = (props: Props) => {
             contribute in other ways, we&apos;ve thoughtfully curated two options to
             celebrate our marriage.
           </p>
-          <div className="flex flex-col lg:flex-row mt-24 justify-center gap-12 ">
+          <div className="flex flex-col-reverse lg:flex-row mt-24 justify-center gap-12 ">
             <div className="flex flex-1 text-center items-center justify-between flex-col">
               <div>
                 <p className="w-full lg:w-[28ch] mb-8 text-2xl sm:text-2xl md:text-3xl lg:text-4xl">

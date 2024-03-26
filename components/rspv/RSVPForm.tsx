@@ -4,6 +4,7 @@ import NameEntryStep from "./NameEntryStep";
 import DetailsEntryStep from "./DetailsEntryStep";
 import SuccessScreen from "./SuccessScreen"; // Assuming you have this component ready
 import StepProgress from "./StepProgress";
+import Footer from "../../components/footer";
 
 type Props = {};
 
@@ -43,7 +44,7 @@ const RSVPForm = (props: Props) => {
 
   return (
     <div className="border-double-outline m-4 min-h-[90vh]">
-      <div className="flex flex-col pt-16 pb-8 px-4 md:px-8 lg:px-20">
+      <div className="flex flex-col pt-16 px-4 md:px-8 lg:px-20">
         <h2
           style={{ lineHeight: "160%", letterSpacing: "5px" }}
           className=" mb-8 text-center text-lg uppercase"
@@ -61,6 +62,7 @@ const RSVPForm = (props: Props) => {
           />
         )}
       </div>
+      <Footer />
     </div>
   );
 };
