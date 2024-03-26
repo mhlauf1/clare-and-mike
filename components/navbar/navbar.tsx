@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
+import MobileMenu from "./mobile-navbar";
 type Props = {};
 
 const MobileButton = ({ onClick }: { onClick: any }) => {
@@ -33,9 +33,37 @@ const MobileButton = ({ onClick }: { onClick: any }) => {
 };
 
 const Navbar = (props: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const mobileMenu = [
+    {
+      title: "Home", 
+      path: "/"
+    },
+    {
+      title: "Accommodations", 
+      path: "/accommodations"
+    },
+    {
+      title: "Wedding Party", 
+      path: "/wedding-party"
+    },
+    {
+      title: "Photos", 
+      path: "/photos"
+    },
+    {
+      title: "Our Story", 
+      path: "/our-story"
+    },
+    {
+      title: "Registry", 
+      path: "/registry"
+    },
+    {
+      title: "RSVP", 
+      path: "/rsvp"
+    },
+  ]
 
   return (
     <nav className="bg-white drop-shadow-md	 z-20 sticky top-0">
@@ -48,7 +76,9 @@ const Navbar = (props: Props) => {
             C+M
           </span>
         </Link>
-        <MobileButton onClick={toggleMenu} />
+        <div className="block flex-none md:hidden">
+          <MobileMenu menu={mobileMenu} />
+        </div>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-neutral-800">
             <li>
