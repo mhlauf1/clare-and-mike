@@ -43,8 +43,7 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
   };
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
-  }, [])
-
+  }, []);
 
   return (
     <div className="pb-8">
@@ -73,7 +72,7 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
                 Will you Attend The Welcome Party?
               </label>
               <select
-                className="border border-neutral-700 px-4 py-2 rounded-md"
+                className="border cursor-pointer border-neutral-700 px-4 py-2 rounded-md"
                 name={`guest-${index}-attending-welcome-party`}
                 id={`guest-${index}-attending-welcome-party`}
                 onChange={(e) =>
@@ -97,7 +96,7 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
                 Will you Attend The Wedding?
               </label>
               <select
-                className="border  border-neutral-700 px-4 py-2 rounded-md"
+                className="border cursor-pointer  border-neutral-700 px-4 py-2 rounded-md"
                 name={`guest-${index}-attending-wedding`}
                 id={`guest-${index}-attending-wedding`}
                 onChange={(e) =>
@@ -121,7 +120,7 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
                 Dinner Selection - Choose One
               </label>
               <select
-                className="border  border-neutral-700 px-4 py-2 rounded-md"
+                className="border cursor-pointer  border-neutral-700 px-4 py-2 rounded-md"
                 name={`guest-${index}-dinner-selection`}
                 id={`guest-${index}-dinner-selection`}
                 onChange={(e) =>
@@ -133,9 +132,9 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
                 }
               >
                 <option value="">Choose One</option>
-                <option value="beef-tenderloin">Beef Tenderloin</option>
-                <option value="chicken">Chicken</option>
-                <option value="pasta">Pasta (v)</option>
+                <option value="beef-tenderloin">Seared Beef Tenderloin</option>
+                <option value="chicken">Parmesan Chicken Breast</option>
+                <option value="pasta">Mushroom Ricotta Ravioli (v)</option>
               </select>
             </div>
           </fieldset>
