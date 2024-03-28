@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/navbar/navbar";
 import localFont from "next/font/local";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Clare & Michael",
@@ -29,6 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={`${manstein.variable} ${ortical.variable}`}>
         <Navbar />
         {children}
