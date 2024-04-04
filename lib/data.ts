@@ -1,6 +1,5 @@
 const ADULT = 'adult';
 const KID = 'kid';
-const BABY = 'baby';
 
 export const guests = [
     { id: 1, groupId: 1, name: 'Michael Laufersweiler', age: ADULT },
@@ -62,7 +61,7 @@ export const guests = [
     { id: 57, groupId: 29, name: "Chi Okare", age: ADULT },
     { id: 58, groupId: 30, name: "Tanner Kiser", age: ADULT },
     { id: 59, groupId: 30, name: "Courtney Kiser", age: ADULT },
-    { id: 60, groupId: 30, name: "Carter Kiser", age: BABY },
+    { id: 60, groupId: 30, name: "Carter Kiser", age: KID },
     { id: 61, groupId: 31, name: "Paul Oliver", age: ADULT },
     { id: 62, groupId: 31, name: "Meghan Ivan", age: ADULT },
     { id: 63, groupId: 32, name: "Molly Cleary", age: ADULT },
@@ -124,18 +123,18 @@ export const guests = [
     { id: 119, groupId: 66, name: "Corey Napieralski", age: ADULT },
     { id: 120, groupId: 67, name: "Nick Kerkman", age: ADULT },
     { id: 362, groupId: 67, name: "Shauna Manion", age: ADULT },
-    { id: 121, groupId: 67, name: "Wesley Manion Kerkman", age: BABY },
+    { id: 121, groupId: 67, name: "Wesley Manion Kerkman", age: KID },
     { id: 122, groupId: 68, name: "Kerry Manion", age: ADULT },
     { id: 123, groupId: 68, name: "JP Marquardt", age: ADULT },
     { id: 124, groupId: 68, name: "Maeve Marquardt", age: KID },
-    { id: 125, groupId: 68, name: "Finlee Marquardt", age: BABY },
+    { id: 125, groupId: 68, name: "Finlee Marquardt", age: KID },
     { id: 126, groupId: 69, name: "Marcy O'Malley", age: ADULT },
     { id: 127, groupId: 69, name: "Mick O'Malley", age: ADULT },
     { id: 128, groupId: 69, name: "Grace O'Malley", age: ADULT },
     { id: 129, groupId: 69, name: "Chase Poppe", age: ADULT },
     { id: 130, groupId: 70, name: "Michael Tom O'Malley", age: ADULT },
     { id: 131, groupId: 70, name: "Ashley O'Malley", age: ADULT },
-    { id: 132, groupId: 70, name: "Michael Tom O'Malley Jr", age: BABY },
+    { id: 132, groupId: 70, name: "Michael Tom O'Malley Jr", age: KID },
     { id: 133, groupId: 71, name: "Christine Manion", age: ADULT },
     { id: 134, groupId: 71, name: "John Reiss", age: ADULT },
     { id: 135, groupId: 72, name: "Noah Reiss", age: ADULT },
