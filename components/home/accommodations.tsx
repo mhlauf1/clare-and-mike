@@ -10,7 +10,7 @@ const Accommodations = (props: Props) => {
       <p className="mb-2 text-center lg:mb-6 text-sm lg:text-xl">
         Find your ideal stay for the weekend in Elkhart Lake
       </p>
-      <Button href="/accommodations">Explore Loding and Travel</Button>
+      <Button href="/accommodations">Explore Lodging and Travel</Button>
     </div>
   );
 };
