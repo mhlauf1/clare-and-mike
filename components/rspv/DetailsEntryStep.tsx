@@ -45,6 +45,8 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, []);
 
+  console.log(guestDetails, "guestDetails");
+
   return (
     <div className="pb-8">
       <p className="mb-2">Fill out all information for the following guests:</p>
@@ -112,31 +114,59 @@ const DetailsEntryStep: React.FC<DetailsEntryStepProps> = ({
                 <option value="No">No</option>
               </select>
             </div>
-            <div className="mb-8 flex items-start flex-col gap-4">
-              <label
-                className="text-lg"
-                htmlFor={`guest-${index}-dinner-selection`}
-              >
-                Dinner Selection - Choose One
-              </label>
-              <select
-                className="border cursor-pointer  border-neutral-700 px-4 py-2 rounded-md"
-                name={`guest-${index}-dinner-selection`}
-                id={`guest-${index}-dinner-selection`}
-                onChange={(e) =>
-                  handleDetailChange(
-                    guest.id,
-                    "dinnerSelection",
-                    e.target.value
-                  )
-                }
-              >
-                <option value="">Choose One</option>
-                <option value="beef-tenderloin">Seared Beef Tenderloin</option>
-                <option value="chicken">Parmesan Chicken Breast</option>
-                <option value="pasta">Mushroom Ricotta Ravioli (v)</option>
-              </select>
-            </div>
+            {guest.age === "kid" ? (
+              <div className="mb-8 flex items-start flex-col gap-4">
+                <label
+                  className="text-lg"
+                  htmlFor={`guest-${index}-dinner-selection`}
+                >
+                  Dinner Selection - Choose One
+                </label>
+                <select
+                  className="border cursor-pointer  border-neutral-700 px-4 py-2 rounded-md"
+                  name={`guest-${index}-dinner-selection`}
+                  id={`guest-${index}-dinner-selection`}
+                  onChange={(e) =>
+                    handleDetailChange(
+                      guest.id,
+                      "dinnerSelection",
+                      e.target.value
+                    )
+                  }
+                >
+                  <option value="">Choose One</option>
+                  <option value="chicken-tenders">Chicken Tenders</option>
+                </select>
+              </div>
+            ) : (
+              <div className="mb-8 flex items-start flex-col gap-4">
+                <label
+                  className="text-lg"
+                  htmlFor={`guest-${index}-dinner-selection`}
+                >
+                  Dinner Selection - Choose One
+                </label>
+                <select
+                  className="border cursor-pointer  border-neutral-700 px-4 py-2 rounded-md"
+                  name={`guest-${index}-dinner-selection`}
+                  id={`guest-${index}-dinner-selection`}
+                  onChange={(e) =>
+                    handleDetailChange(
+                      guest.id,
+                      "dinnerSelection",
+                      e.target.value
+                    )
+                  }
+                >
+                  <option value="">Choose One</option>
+                  <option value="beef-tenderloin">
+                    Seared Beef Tenderloin
+                  </option>
+                  <option value="chicken">Parmesan Chicken Breast</option>
+                  <option value="pasta">Mushroom Ricotta Ravioli (v)</option>
+                </select>
+              </div>
+            )}
           </fieldset>
         ))}
         <button
