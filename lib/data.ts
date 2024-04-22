@@ -286,7 +286,7 @@ export const guests = [
     { id: 282, groupId: 125, name: "Cheryl Vanden Burgt", age: ADULT },
     { id: 283, groupId: 126, name: "Kim Ricci", age: ADULT },
     { id: 284, groupId: 126, name: "Ron Ricci", age: ADULT },
-    { id: 285, groupId: 127, name: "Stacy Pelto", age: ADULT },
+    { id: 285, groupId: 127, name: "Stacey Pelto", age: ADULT },
     { id: 286, groupId: 128, name: "Kendra Ryder", age: ADULT },
     { id: 287, groupId: 128, name: "Bill Ryder", age: ADULT },
     { id: 288, groupId: 129, name: "David Krump", age: ADULT },
@@ -363,4 +363,5 @@ export const guests = [
     { id: 359, groupId: 174, name: "Reg McKillip", age: ADULT },
     { id: 360, groupId: 175, name: "John Schottmer", age: ADULT },
     { id: 361, groupId: 175, name: "Kellie Schottmer", age: ADULT },
+    { id: 362, groupId: 127, name: "Thomas Ricci", age: ADULT },
 ];
