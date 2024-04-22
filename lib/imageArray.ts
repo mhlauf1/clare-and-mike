@@ -20,7 +20,6 @@ export const images = [
     "our-photos-19.jpg",
     "our-photos-20.jpg",
     "our-photos-21.jpg",
-    "our-photos-22.jpg",
     "our-photos-23.jpg",
     "our-photos-24.jpg",
     "our-photos-25.jpg",
@@ -29,4 +28,8 @@ export const images = [
     "our-photos-28.jpg",
     "our-photos-29.jpg",
     "our-photos-30.jpg",
+    "our-photos-36.jpg",
+    "our-photos-22.jpg",
+    "our-photos-34.jpg",
+    "our-photos-35.jpg",
 ];
