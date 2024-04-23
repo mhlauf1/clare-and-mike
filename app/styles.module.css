@@ -1,8 +1,5 @@
 .homeHeroSectionContainer {
   height: 95vh;
   width: 100vw;
-  background-image: url("/flower-hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("/flower-hero.png") no-repeat fixed center/cover;
 }
-
