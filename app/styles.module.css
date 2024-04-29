@@ -3,3 +3,9 @@
   width: 100vw;
   background: url("/flower-hero.png") no-repeat fixed center/cover;
 }
+
+@media (max-width: 767px) {
+  .homeHeroSectionContainer {
+    background: url("/flower-hero.png") no-repeat;
+  }
+}
